@@ -52,17 +52,29 @@ export default function Home() {
                       <div className="object-contain flex flexbox flex-col justify-center lg:object-scale-down"><Image class="" src="/palmnotch.png" width="3000" height="1200"></Image></div>
                   </div>
 
+                 <div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black z-0">
+                  <div class="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0">
+                    <div class="absolute inset-auto right-1/2 h-56 w-[30rem] bg-gradient-conic from-orange-500 via-black to-transparent text-white [--conic-position:from_70deg_at_center_top]"></div>
+                    <div class="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-black to-orange-500 text-white [--conic-position:from_290deg_at_center_top]"></div>
+                    <div class="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-black blur-2xl"></div>
+                    <div class="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-10 backdrop-blur-md"></div>
+                    <div class="absolute inset-auto z-50 h-36 w-[28rem] -translate-y-1/2 rounded-full bg-yellow-500 opacity-50 blur-3xl"></div>
+                    <div class="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-orange-400 blur-2xl"></div>
+                      <div class="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-orange-400 blur-sm"></div>
 
-              <div className="container lg:mx-auto font-Poppins text-white text-s md:text-4xl lg:text-4xl ">
-                <div className="container flex justify-center font-Poppins text-transparent text-xl md:text-4xl lg:text-6xl bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600" href="#URL">
-                    <div class="">WORK DESERVES TO BE</div>
-              </div>
-              <div className="container flex justify-center font-Poppins font-semibold text-transparent text-4xl md:text-4xl lg:text-6xl bg-clip-text bg-white" href="#URL">
-                  <div>HAPPY</div>
-                    </div>
-                </div>
+                      <div class="absolute inset-auto z-50 h-44 w-full -translate-y-[12.5rem] bg-black"></div>
+                  </div>
+                  <div class="relative z-50 flex -translate-y-80 flex-col items-center px-2">
 
-                  <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-2xl lg:text-6xl"><div class="">From URL to IRL</div></div>
+                      <div className="container flex justify-center font-Poppins text-transparent text-xl md:text-4xl lg:text-6xl bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600" href="#URL">
+                          <div class="">WORK DESERVES TO BE</div>
+                      </div>
+                      <div className="container flex justify-center font-Poppins font-semibold text-transparent text-4xl md:text-4xl lg:text-6xl bg-clip-text bg-white" href="#URL">
+                          <div>HAPPY</div>
+                      </div>
+                  </div>
+                  </div>
+                  <div className="container flex justify-center font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl"><div class="">From </div><div class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600 mx-4">URL</div><div class="">to </div><div class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-teal-600 mx-4">IRL</div></div>
 
                   <div class="container justify-between flex flex-row md:object-scale-down px-6 my-16 px-12 lg:px-16 md:py-6 rounded-lg shadow-xl bg-transparent">
                       <img src="party1.png" alt="" className="rounded-xl h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
@@ -73,7 +85,7 @@ export default function Home() {
                   <div class="container flex flex-row justify-center px-6 py-6 md:object-scale-down rounded-lg shadow-xl bg-transparent">
                       <img src="joinus.png" alt="" class="rounded-t-lg object-cover"/>
                   </div>
-                  <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-2xl lg:text-6xl"><div class="">Unique Experiences</div></div>
+                  <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl"><div class="">Unique Experiences</div></div>
                   <div className="container flex flexbox justify-center font-Poppins flexbox ">
                       <div class="px-2">
                       <div class="flex -mx-2">
@@ -94,6 +106,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+                  <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl"><div class="">Creator Studio</div></div>
 
                   <div class="container flex flex-row justify-center px-6 py-6 md:object-scale-down rounded-lg shadow-xl bg-transparent">
                       <Image src="/cs.png" width="1000" height="600"></Image>

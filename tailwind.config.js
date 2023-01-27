@@ -27,6 +27,9 @@ module.exports = {
             center: true,
         },
         extend: {
+            backgroundImage: {
+                'gradient-conic': 'conic-gradient(var(--conic-position), var(--tw-gradient-stops))',
+            },
             fontFamily: {
                 "Poppins": ["Poppins", ...defaultTheme.fontFamily.sans],
             },
