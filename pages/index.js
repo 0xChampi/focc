@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 
+
 export default function Home() {
   return (
           <body>
@@ -10,7 +11,7 @@ export default function Home() {
               <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black-900">
                   <div class="container flex flex-wrap items-center justify-between mx-2 md:mx-auto">
                       <Link href="https://fiveoclockclub.co/" class="flex items-center">
-                          <img src="focc.png" className="h-10 mr-1 sm:h-10" alt="FiveOClockClub Logo" />
+                          <div className="mr-1 "><Image src="/focc.png"  width="100" height="20" alt="FiveOClockClub Logo" /></div>
                       </Link>
                       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                           <span class="sr-only">Open main menu</span>
@@ -38,8 +39,8 @@ export default function Home() {
               </nav>
 
               <main>
-                  <div className="container lg:mx-auto py-10 flex flexbox flex-row  m-6 font-Poppins text-white text-s md:text-4xl lg:text-4xl ">
-                      <div className="container text-xs flex-row">
+                  <div className="container lg:mx-auto py-10 flex flexbox justify-center  m-6 font-Poppins text-white text-s md:text-4xl lg:text-4xl ">
+                      <div className="text-xs flex-row">
                           <div className="font-extrabold justify-center py-4 md:py-10 text-2xl md:text-2xl lg:text-6xl">Experiential Networking Platform</div>
                           <div className="align-middle my-6 sm:text-sm md:text-l">Join the club for exclusive access to unique networking experiences & snackable content produced live from our mobile Creator Studio alongside the most influential digital advertising events across the globe.</div>
                           <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-Poppins text-gray-900 rounded-lg group bg-gradient-to-br from-orange-700 to-yellow-600 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
@@ -48,7 +49,7 @@ export default function Home() {
                               </span>
                           </button>
                       </div>
-                      <div className="object-contain flex flexbox flex-col justify-center lg:object-scale-down"><img class="" src="palmnotch.png"></img></div>
+                      <div className="object-contain flex flexbox flex-col justify-center lg:object-scale-down"><Image class="" src="/palmnotch.png" width="3000" height="1200"></Image></div>
                   </div>
 
 
@@ -64,22 +65,50 @@ export default function Home() {
                   <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-2xl lg:text-6xl"><div class="">From URL to IRL</div></div>
 
                   <div class="container justify-between flex flex-row md:object-scale-down px-6 my-16 px-12 lg:px-16 md:py-6 rounded-lg shadow-xl bg-transparent">
-                      <img src="party1.png" alt="" className="rounded-t-lg h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
-                      <img src="party2.png" alt="" className="rounded-t-lg h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
-                      <img src="party3.png" alt="" className="rounded-t-lg h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
+                      <img src="party1.png" alt="" className="rounded-xl h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
+                      <img src="party2.png" alt="" className="rounded-xl h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
+                      <img src="party3.png" alt="" className="rounded-xl h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
               </div>
 
                   <div class="container flex flex-row justify-center px-6 py-6 md:object-scale-down rounded-lg shadow-xl bg-transparent">
                       <img src="joinus.png" alt="" class="rounded-t-lg object-cover"/>
                   </div>
+                  <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-2xl lg:text-6xl"><div class="">Unique Experiences</div></div>
+                  <div className="container flex flexbox justify-center font-Poppins flexbox ">
+                      <div class="px-2">
+                      <div class="flex -mx-2">
+                        <div class="w-1/3 px-2">
+                            <div class="bg-gray-800 rounded-2xl px-4 py-4 text-2xl h-36 w-24 md:h-72 md:w-48 lg:text-4xl flex flexbox flex-col justify-center">300+
+                                <div className="text-xxs md:text-base lg:text-xl">we pride ourselves in having hosted lots of parties in the norcal and socal areas</div>
+                            </div>
 
-                  <div className="container flex font-semibold font-Poppins flexbox py-10 px-6 text-2xl md:text-2xl lg:text-6xl">Unique Experiences</div>
-                  <svg class="animate-bounce w-6 h-6 ...">
-             asd
-                  </svg>
+                        </div>
+                        <div class="w-1/3 px-2">
+                            <div class="bg-gray-800 rounded-2xl px-4 py-4  text-2xl h-36 w-24 md:h-72 md:w-48 flex flexbox justify-center align-baseline">500k</div>
+                        </div>
+                        <div class="w-1/3 px-2">
+                            <div class="bg-gray-800 rounded-2xl px-4 py-4  text-2xl h-36 w-24 md:h-72 md:w-48 flex flexbox flex-row justify-center">
+                                10,000
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container flex flex-row justify-center px-6 py-6 md:object-scale-down rounded-lg shadow-xl bg-transparent">
+                      <Image src="/cs.png" width="1000" height="600"></Image>
+                  </div>
+                  <div class="container justify-between flex flex-row md:object-scale-down px-6 my-16 px-12 lg:px-16 md:py-6 rounded-lg shadow-xl bg-transparent">
+                      <img src="party1.png" alt="" className="rounded-xl h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
+                      <img src="party2.png" alt="" className="rounded-xl h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
+                      <img src="party3.png" alt="" className="rounded-xl h-40 w-30 md:h-80 md:h-30 lg:mx-auto"/>
+                  </div>
+
+                  <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-2xl lg:text-6xl"><div class="">It's Five O'Clock Somewhere</div></div>
 
 
               </main>
+              <footer>a</footer>
           </body>
 
   )
