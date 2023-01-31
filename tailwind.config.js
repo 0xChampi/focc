@@ -14,6 +14,7 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontSize:{
+           '2xs': '0.3rem',
           xxs: '0.5rem',
             sm: '0.8rem',
             base: '1rem',
@@ -22,6 +23,7 @@ module.exports = {
             '3xl': '1.953rem',
             '4xl': '2.441rem',
             '5xl': '3.052rem',
+            '6xl': '5.00rem',
         },
         container: {
             center: true,
@@ -29,6 +31,8 @@ module.exports = {
         extend: {
             backgroundImage: {
                 'gradient-conic': 'conic-gradient(var(--conic-position), var(--tw-gradient-stops))',
+                 'join-us': "url('/joinus.png')",
+                 'footer-texture': "url('/img/footer-texture.png')",
             },
             fontFamily: {
                 "Poppins": ["Poppins", ...defaultTheme.fontFamily.sans],
@@ -48,6 +52,7 @@ module.exports = {
     },
     variants: {
         extend: {},
+        animation: ["motion-safe"]
     },
     plugins: [
         require('taos/plugin')
