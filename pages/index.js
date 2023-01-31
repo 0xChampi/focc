@@ -15,17 +15,17 @@ export default function Home() {
 
   return (
               <body data-scroll-container useRef="containerRef" className="h-screen bg-red">
-              <nav class="bg-black border-zinc-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black-900">
+                  <nav class="bg-rgb(20, 20, 20) border-zinc-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black-900">
                   <div class="container flex items-center justify-between mx-2 md:mx-auto">
-                      <Link to="/cs" class="flex items-center">
-                          <div className="mr-1 px-16 py-8 lg:mx-auto"><Image src="/focc.png"  width="100" height="20" alt="FiveOClockClub Logo" /></div>
+                      <Link to="/cs" class="flex justify-center mx-12">
+                          <div className="flex flexbox px-16 py-8 lg:mx-auto"><Image src="/focc.png"  width="350" height="40" alt="FiveOClockClub Logo" /></div>
                       </Link>
                       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-zinc-500 rounded-lg md:hidden hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-200 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:focus:ring-zinc-600" aria-controls="navbar-default" aria-expanded="false">
                           <span class="sr-only">Open main menu</span>
                           <svg class="w-6 h-6" aria-hidden="true" fill="orange" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                       </button>
                       <div class="hidden w-full md:block md:w-1/2" id="navbar-default">
-                          <ul class="flex flex-col justify-center font-Poppins border border-zinc-100 rounded-lg bg-black-100 md:flex-row md:space-x-8 md:text-xl md:font-medium md:border-0 md:bg-black">
+                          <ul class="flex flex-col justify-center font-Poppins border border-zinc-100 rounded-lg md:flex-row md:space-x-8 md:text-xl md:font-medium md:border-0 md:bg-rgb(20, 20, 20)">
                               <li>
                                   <a href="#" class="text-white-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0">EXPERIENCES</a>
                               </li>
