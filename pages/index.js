@@ -53,7 +53,7 @@ export default function Home() {
                               </span>
                           </button>
                       </div>
-                      <div className="object-contain flex flexbox flex-col -space-y-2 justify-center"><Image class="" src="/palmnotch.png" width="3000" height="1200"></Image></div>
+                      <div className="object-contain flex flexbox flex-col -space-y-2 justify-center"><Image class="" src="/palmnotch.png" width="1200" height="1000"></Image></div>
                   </div>
 
 
@@ -64,7 +64,7 @@ export default function Home() {
                           <div>HAPPY</div>
                       </div>
 
-                  <div className="container flex -py-4 my-12 font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl">
+                  <div className="container flex -py-4 my-12 font-semibold font-Poppins flexbox px-16 text-2xl md:text-4xl lg:text-5xl">
                       <div class="">From </div>
                       <div class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600 mx-4">URL</div>
                       <div class="">to </div>
