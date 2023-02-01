@@ -2,23 +2,36 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import { Link, animateScroll as scroll } from "react-scroll";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useRef, useEffect } from 'react';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
+import { Detector, Scroller } from '@unreal/pan'
+import { Application } from '@splinetool/runtime';
+import Spline from '@splinetool/react-spline';
 
 
 
 export default function Home() {
-    const containerRef = useRef(null)
+
+//    const [customCursorEnabled, setCustomCursorEnabled] = useState(false)
+    useEffect(() => {
+//        const detector = new Detector()
+
+        const scroller = new Scroller()
+        const elements = document.getElementsByClassName('fade-in')
+        for (const element of elements){
+            scroller.whenElementInViewport(element, () => {
+                element.style.opacity=1;
+                },{ offset: -200})
+        }
+    })
 
   return (
-              <body data-scroll-container useRef="containerRef" className="h-screen bg-red">
+<>
                   <nav class="bg-rgb(20, 20, 20) border-zinc-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black-900">
                   <div class="container flex items-center justify-between mx-2 md:mx-auto">
                       <Link to="/cs" class="flex justify-center mx-12">
-                          <div className="flex flexbox px-16 py-8 lg:mx-auto"><Image src="/focc.png"  width="350" height="40" alt="FiveOClockClub Logo" /></div>
+                          <div className="flex flexbox px-16 py-8 lg:mx-auto">
+                              <Image src="/focc.png"  width="350" height="40" alt="FiveOClockClub Logo" />
+                          </div>
                       </Link>
                       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-zinc-500 rounded-lg md:hidden hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-200 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:focus:ring-zinc-600" aria-controls="navbar-default" aria-expanded="false">
                           <span class="sr-only">Open main menu</span>
@@ -56,8 +69,31 @@ export default function Home() {
                       <div className="object-contain flex flexbox flex-col -space-y-2 justify-center"><Image class="" src="/palmnotch.png" width="1200" height="1000"></Image></div>
                   </div>
 
-
-                      <div className="container flex justify-center font-Poppins text-transparent text-xl md:text-2xl lg:text-3xl bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600" href="#URL">
+                  <div className="w-full bg-white-100">
+                      <div className="h-[200px] m-auto overflow-hidden relative w-auto">
+                          <ul className="flex w-[calc(250px*14)] animate-scroll">
+                              <li className="mx-5 w-[250px]"><Image class="" src="/adjust.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/apptweak.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/blindferret.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/craftsman.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/fluent.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/gopro.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/jamcity.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/metricworks.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/mintegral.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/mobileaction.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/moloco.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/singular.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/tipalti.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/tmobile.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/vungle.png" width="1200" height="1000"></Image></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div className="flex flexbox justify-center">
+                      <Spline scene="https://prod.spline.design/rSKhg0F1DceQLp5L/scene.splinecode" />
+                  </div>
+                  <div className="container flex justify-center font-Poppins text-transparent text-xl md:text-2xl lg:text-3xl bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600" href="#URL">
                           <div class="">WORK DESERVES TO BE</div>
                       </div>
                       <div className="inline-block container flex justify-center font-Poppins font-semibold text-transparent text-4xl md:text-4xl lg:text-6xl bg-clip-text bg-white" href="#URL">
@@ -74,7 +110,7 @@ export default function Home() {
 
                   <div className="container flex flexbox justify-center font-Poppins flexbox ">
                       <div class="px-2">
-                          <div class="flex -mx-2">
+                          <div class="flex -mx-2 fade-in opacity-0 transition opacity ease-out duration-500">
                               <div class="w-1/3 px-4">
                                   <img src="party1.png" height="400" width="400"/>
 
@@ -92,11 +128,11 @@ export default function Home() {
 
                   <div className="container flex -py-4 my-12 justify-center font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl">
                   </div>
-                  <div class="container flex flex-row justify-center px-6 md:object-scale-down rounded-lg shadow-xl">
+                  <div class="container flex flex-row justify-center px-6 md:object-scale-down rounded-lg shadow-xl fade-in opacity-0 transition opacity ease-out duration-300">
                       <img src="joinus.png" height="200" width="1300" alt="" class="rounded-t-lg"/>
                   </div>
-                  <div className="container flex font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl"><div class="">UNIQUE EXPERIENCES</div></div>
-                  <div className="container flex flexbox justify-center font-Poppins flexbox ">
+                  <div className="container flex font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500"><div class="">UNIQUE EXPERIENCES</div></div>
+                  <div className="container flex flexbox justify-center font-Poppins flexbox fade-in opacity-0 transition opacity ease-out duration-500">
                       <div class="px-2">
                       <div class="flex -mx-2">
                         <div class="px-2">
@@ -124,18 +160,18 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div id="cs" className="container flex font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl"><div class="">CREATOR LAB</div></div>
+                  <div id="cs" className="container flex font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500 fade-in opacity-0 transition opacity ease-out duration-500"><div class="">CREATOR LAB</div></div>
                   <div className="container flex justify-center">
                           <div className="my-4 mx-6 text-sm md:text-xl">Join the club for exclusive access to unique networking experiences & snackable content produced live from our mobile Creator Studio alongside the most influential digital advertising events across the globe.</div>
                   </div>
-                  <div class="motion-safe:animate-fadeIn py-12 container flex flex-row justify-center px-6 py-6 md:object-scale-down rounded-lg shadow-xl bg-transparent">
+                  <div class="fade-in opacity-0 transition opacity ease-out duration-500 py-12 container flex flex-row justify-center px-6 py-6 md:object-scale-down rounded-lg shadow-xl bg-transparent">
                       <Image class="fade-in-image" src="/cs.png" width="1300" height="600"></Image>
                   </div>
                   <div className="container flex justify-center"><div id="/cs" className="mx-5 container flex font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl"><div class="">PARTNER WITH US</div></div></div>
                   <div className="container flex justify-center">
                           <div className="my-6 mx-14 text-sm md:text-2xl">Join the club for exclusive access to unique networking experiences & snackable content produced live from our mobile Creator Studio alongside the most influential digital advertising events across the globe.</div>
                   </div>
-                  <div className="py-6 container flex flexbox justify-center font-Poppins flexbox ">
+                  <div className="py-6 container flex flexbox justify-center font-Poppins flexbox fade-in opacity-0 transition opacity ease-out duration-500">
                       <div class="px-2">
                           <div class="flex -mx-2">
                               <div class="w-1/3 px-4">
@@ -154,7 +190,7 @@ export default function Home() {
                   </div>
 
                   <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-3xl lg:text-5xl"><div class="">ITS FIVE O'CLOCK SOMEWHERE</div></div>
-                  <div className="flex flexbox justify-center">
+                  <div className="flex flexbox justify-center fade-in opacity-0 transition opacity ease-out duration-500">
                       <Image src="/oclock.png" height="80" width="80" className="mx-9"></Image>
                       <Image src="/wclock.png" height="80" width="140"></Image>
                       <Image src="/wclock.png" height="80" width="140"></Image>
@@ -162,7 +198,7 @@ export default function Home() {
                   </div>
 
 
-                  <div className="py-12 container flex flexbox justify-center font-Poppins flexbox ">
+                  <div className="py-12 container flex flexbox justify-center font-Poppins flexbox fade-in opacity-0 transition opacity ease-out duration-500">
                       <div class="px-2">
                           <div class="flex -mx-2">
                               <div class="px-2">
@@ -191,7 +227,7 @@ export default function Home() {
               </main>
 
 
-                  <footer class="bg-blue dark:bg-zinc-900">
+<footer class="bg-blue dark:bg-zinc-900 fade-in opacity-0 transition opacity ease-out duration-500">
                   <div><div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
                       <div>
                           <h2 class="mb-6 text-sm font-semibold text-zinc-500 uppercase dark:text-zinc-400">Company</h2>
@@ -259,8 +295,8 @@ export default function Home() {
                   </div>
                   </footer>
 
-          </body>
+</>
 
-  )
+          )
 }
 

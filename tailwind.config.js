@@ -14,8 +14,8 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontSize:{
-           '2xs': '0.3rem',
-          xxs: '0.5rem',
+            '2xs': '0.3rem',
+            xxs: '0.5rem',
             sm: '0.8rem',
             base: '1rem',
             xl: '1.25rem',
@@ -31,31 +31,37 @@ module.exports = {
         extend: {
             backgroundImage: {
                 'gradient-conic': 'conic-gradient(var(--conic-position), var(--tw-gradient-stops))',
-                 'join-us': "url('/joinus.png')",
-                 'footer-texture': "url('/img/footer-texture.png')",
+                'join-us': "url('/joinus.png')",
+                'footer-texture': "url('/img/footer-texture.png')",
             },
             fontFamily: {
                 "Poppins": ["Poppins", ...defaultTheme.fontFamily.sans],
             },
 
             animation: {
-                fadeIn: "fadeIn 2s ease-in forwards"
-},
-            keyframes: {
-                fadeIn: {
-                    "0%": { opacity: 0 },
-                    "100%": { opacity: 1 }
-                }
-            },
+                fadeIn: "fadeIn 2s ease-in forwards",
+                scroll: 'scroll 60s linear infinite',
 
+            },
+            keyframes: {
+                scroll: {
+                    '0%': { transform: 'translateX(0)' },
+                    '100%': { transform: 'translateX(calc(-250px * 14))' },
+                    fadeIn: {
+                        "0%": { opacity: 0 },
+                        "100%": { opacity: 1 }
+                    }
+                },
+
+            },
         },
-    },
-    variants: {
-        extend: {},
-        animation: ["motion-safe"]
-    },
-    plugins: [
-        require('taos/plugin')
+        variants: {
+            extend: {},
+            animation: ["motion-safe"]
+        },
+        plugins: [
+            require('taos/plugin')
         ],
+    },
 }
 

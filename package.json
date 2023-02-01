@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@next/font": "^13.1.2",
+    "@splinetool/react-spline": "^2.2.5",
+    "@splinetool/runtime": "^0.9.204",
+    "@unreal/pan": "^0.0.22",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.2",
     "framer-motion": "^8.5.5",
