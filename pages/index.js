@@ -6,7 +6,7 @@ import { useRef, useEffect } from 'react';
 import { Detector, Scroller } from '@unreal/pan'
 import { Application } from '@splinetool/runtime';
 import Spline from '@splinetool/react-spline';
-
+import Typical from 'react-typical';
 
 
 export default function Home() {
@@ -69,7 +69,7 @@ export default function Home() {
                       <div className="object-contain flex flexbox flex-col -space-y-2 justify-center"><Image class="" src="/palmnotch.png" width="1200" height="1000"></Image></div>
                   </div>
 
-                  <div className="w-full bg-white-100">
+                  <div className="container w-400px bg-white-100">
                       <div className="h-[200px] m-auto overflow-hidden relative w-auto">
                           <ul className="flex w-[calc(250px*14)] animate-scroll">
                               <li className="mx-5 w-[250px]"><Image class="" src="/adjust.png" width="1200" height="1000"></Image></li>
@@ -100,12 +100,23 @@ export default function Home() {
                           <div>HAPPY</div>
                       </div>
 
-                  <div className="container flex -py-4 my-12 font-semibold font-Poppins flexbox px-16 text-2xl md:text-4xl lg:text-5xl">
-                      <div class="">From </div>
-                      <div class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600 mx-4">URL</div>
-                      <div class="">to </div>
-                      <div class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-teal-600 mx-4">IRL</div>
-                  </div>
+                  <strong className="text-4xl container flex -py-4 my-12 font-semibold font-Poppins flexbox px-16 text-2xl md:text-4xl lg:text-5xl ">
+                                      <p>From {''}
+                                          <Typical
+                                              wrapper="b"
+                                              loop={Infinity}
+                                          steps={[
+                                          'URL',
+                                          2000,
+                                          'to',
+                                          2000,
+                                          'IRL',
+                                          2000,
+                                      ]}
+                                  />
+                                      </p>
+                              </strong>
+
 
 
                   <div className="container flex flexbox justify-center font-Poppins flexbox ">
