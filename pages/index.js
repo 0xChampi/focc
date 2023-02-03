@@ -54,9 +54,9 @@ export default function Home() {
               <main>
                   <div className="container mx-auto px-24 py-10 flex flexbox justify-center m-6 font-Poppins text-white text-s md:text-4xl lg:text-4xl ">
                       <div className="text-xs mx-4 flex-row ">
-                          <div className="-space-y-2 lg:-space-y-8"> <div className="font-extrabold justify-center  text-2xl md:text-xl lg:text-6xl">Experiential</div>
-                          <div className="font-extrabold justify-center -py-4  text-2xl md:text-2xl lg:text-6xl">Networking</div>
-                              <div className="font-extrabold text-transparent text-2xl md:text-2xl lg:text-6xl bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">Platform</div>
+                          <div className="-space-y-2 lg:-space-y-8"> <div className="font-extrabold justify-center  text-2xl md:text-xl lg:text-6xl transform transition duration-500 hover:scale-110">Experiential</div>
+                              <div className="font-extrabold justify-center -py-4  text-2xl md:text-2xl lg:text-6xl transform transition duration-500 hover:scale-110">Networking</div>
+                              <div className="font-extrabold text-transparent text-2xl md:text-2xl lg:text-6xl bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600 transform transition duration-500 hover:scale-110">Platform</div>
                              </div>
                           <div className="my-6 sm:text-sm md:text-l">Join the club for exclusive access to unique networking experiences & snackable content produced live from our mobile Creator Studio alongside the most influential digital advertising events across the globe.</div>
                           <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-Poppins text-zinc-900 rounded-2xl group bg-gradient-to-br from-red-700 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
@@ -141,22 +141,22 @@ export default function Home() {
 
 
                   <div className="flex flexbox flex-row justify-center container space-between pt-12">
-                      <div className="px-5 py-5 justify-center w-1/3">
+                      <div className="px-5 py-5 justify-center w-1/3 transform transition duration-500 hover:scale-110">
                           <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">73M+</div>
                           <div className="mx-10 my-2 flex justify-center">Developers</div>
                       </div>
-                      <div className="px-5 py-5">
+                      <div className="px-5 py-5 transform transition duration-500 hover:scale-110">
                           <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">100M+</div>
                           <div className="mx-10 my-2 flex justify-center">Public Repositories</div>
                       </div>
 
                   </div>
                   <div className="flex flexbox flex-row justify-center container space-between pb-24">
-                      <div className="px-2 py-5 justify-center w-1/3">
+                      <div className="px-2 py-5 justify-center w-1/3 transform transition duration-500 hover:scale-110">
                           <div className="mx-12 my-3 font-poppins font-bold text-4xl flex justify-center">1B+</div>
                           <div className="mx-10 my-2 flex justify-center">Contributors</div>
                       </div>
-                      <div className="px-4 py-5">
+                      <div className="px-4 py-5 transform transition duration-500 hover:scale-110">
                           <div className="mx-10 my-3 font-poppins font-bold text-4xl flex justify-center">90+</div>
                           <div className="mx-10 my-2 flex justify-center">Top Forbes Companies</div>
                       </div>
