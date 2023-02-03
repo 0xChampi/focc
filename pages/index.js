@@ -122,12 +122,12 @@ export default function Home() {
                   <div className="container flex flexbox justify-center font-Poppins flexbox pt-32 ">
                       <div class="px-2">
                           <div class="flex -mx-2 fade-in opacity-0 transition opacity ease-out duration-500">
-                              <div class="w-1/3 mx-6 px-4 bg-party1 h-[32rem] w-[22.8rem]">
+                              <div class="w-1/3 mx-6 px-4 bg-party1 h-[34.7rem] w-[22.8rem] transform transition duration-500 hover:scale-110">
 <div className="justify"></div>
                               </div>
-                              <div class="w-1/3 mx-6 px-4 bg-party2 h-[32rem] w-[22.8rem]">
+                              <div class="w-1/3 mx-6 px-4 bg-party2 h-[34.7rem] w-[22.8rem] transform transition duration-500 hover:scale-110">
                               </div>
-                              <div class="w-1/3 mx-6 px-4 bg-party3 h-[32rem] w-[22.8rem]">
+                              <div class="w-1/3 mx-6 px-4 bg-party3 h-[34.7rem] w-[22.8rem] transform transition duration-500 hover:scale-110">
                           </div>
                       </div>
                   </div>
