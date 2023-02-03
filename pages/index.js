@@ -135,12 +135,10 @@ export default function Home() {
 
                   <div className="container flex -py-4 my-12 pt-32 justify-center font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl">
                   </div>
-                  <div class="container flex flex-row justify-center px-6 md:object-scale-down rounded-lg shadow-xl fade-in opacity-0 transition opacity ease-out duration-300">
-                      <img src="joinus.png" height="200" width="1300" alt="" class="rounded-t-lg"/>
-                  </div>
 
 
-                  <div className="flex flexbox flex-row justify-center container space-between pt-12">
+
+                  <div className="flex flexbox flex-row justify-center mx-12 container space-between pb-12">
                       <div className="px-5 py-5 justify-center w-1/3 transform transition duration-500 hover:scale-110">
                           <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">73M+</div>
                           <div className="mx-10 my-2 flex justify-center">Developers</div>
@@ -151,17 +149,21 @@ export default function Home() {
                       </div>
 
                   </div>
-                  <div className="flex flexbox flex-row justify-center container space-between pb-24">
-                      <div className="px-2 py-5 justify-center w-1/3 transform transition duration-500 hover:scale-110">
-                          <div className="mx-12 my-3 font-poppins font-bold text-4xl flex justify-center">1B+</div>
-                          <div className="mx-10 my-2 flex justify-center">Contributors</div>
+                  <div className="flex flexbox flex-row justify-center mx-12 container space-between pt-12 pb-12">
+                      <div className="px-5 py-5 justify-center w-1/3 transform transition duration-500 hover:scale-110">
+                          <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">10M+</div>
+                          <div className="mx-10 my-2 flex justify-center">Developers</div>
                       </div>
-                      <div className="px-4 py-5 transform transition duration-500 hover:scale-110">
-                          <div className="mx-10 my-3 font-poppins font-bold text-4xl flex justify-center">90+</div>
-                          <div className="mx-10 my-2 flex justify-center">Top Forbes Companies</div>
+                      <div className="px-5 py-5 transform transition duration-500 hover:scale-110">
+                          <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">1B+</div>
+                          <div className="mx-10 my-2 flex justify-center">Public Repositories</div>
                       </div>
+
                   </div>
 
+                  <div class="container flex flex-row pt-12 justify-center px-6 md:object-scale-down rounded-lg shadow-xl fade-in opacity-0 transition opacity ease-out duration-300">
+                      <img src="joinus.png" height="200" width="1300" alt="" class="rounded-t-lg"/>
+                  </div>
 
                   <div id="cs" className="container flex font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500 fade-in opacity-0 transition opacity ease-out duration-500 justify-center"><div class="">AMPLIFY & INTEGRATE</div></div>
 
