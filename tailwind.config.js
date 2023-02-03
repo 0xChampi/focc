@@ -70,6 +70,7 @@ module.exports = {
                 'party1': "url('../public/party1.png')",
                 'party2': "url('../public/party2.png')",
                 'party3': "url('../public/party3.png')",
+                'workspaces' : "url('../public/workspaces.png')",
             },
             fontFamily: {
                 "Poppins": ["Poppins", ...defaultTheme.fontFamily.sans],

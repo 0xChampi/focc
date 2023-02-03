@@ -137,28 +137,26 @@ export default function Home() {
                   </div>
 
 
-
+                  <div className="container bg-workspaces bg-cover h-[36rem] w-[36rem]">
                   <div className="flex flexbox flex-row justify-center mx-12 container space-between pb-12">
-                      <div className="px-5 py-5 justify-center w-1/3 transform transition duration-500 hover:scale-110">
-                          <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">73M+</div>
-                          <div className="mx-10 my-2 flex justify-center">Developers</div>
+                      <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
+                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-start">73M+</div>
+                          <div className="mx-10 my-2 flex justify-start">Developers</div>
                       </div>
-                      <div className="px-5 py-5 transform transition duration-500 hover:scale-110">
+                      <div className="px-5 py-5 transform transition duration-500 hover:scale-110 pt-22">
                           <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">100M+</div>
                           <div className="mx-10 my-2 flex justify-center">Public Repositories</div>
                       </div>
-
-                  </div>
-                  <div className="flex flexbox flex-row justify-center mx-12 container space-between pt-12 pb-12">
-                      <div className="px-5 py-5 justify-center w-1/3 transform transition duration-500 hover:scale-110">
-                          <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">10M+</div>
-                          <div className="mx-10 my-2 flex justify-center">Developers</div>
+                      <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
+                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-start">73M+</div>
+                          <div className="mx-10 my-2 flex justify-start">Developers</div>
                       </div>
-                      <div className="px-5 py-5 transform transition duration-500 hover:scale-110">
-                          <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">1B+</div>
+                      <div className="px-5 py-5 transform transition duration-500 hover:scale-110 pt-22">
+                          <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">100M+</div>
                           <div className="mx-10 my-2 flex justify-center">Public Repositories</div>
                       </div>
-
+</div>
+                      
                   </div>
 
                   <div class="container flex flex-row pt-12 justify-center px-6 md:object-scale-down rounded-lg shadow-xl fade-in opacity-0 transition opacity ease-out duration-300">
