@@ -26,6 +26,20 @@ module.exports = {
             '6xl': '5.00rem',
         },
         extend: {
+            fontSize: {
+                '10xl': '10rem',
+            },
+            letterSpacing: {
+                tightest: '-.06em',
+            },
+            gradientColorStops: {
+                'gradient-1-start': '#007CF0',
+                'gradient-1-end': '#00DFD8',
+                'gradient-2-start': '#7928CA',
+                'gradient-2-end': '#FF0080',
+                'gradient-3-start': '#FF4D4D',
+                'gradient-3-end': '#F9CB28',
+            },
             animation: {
                 type: 'typing 5s steps(30, end), blink .75s step-end infinite;',
             },
@@ -53,6 +67,9 @@ module.exports = {
                 'gradient-conic': 'conic-gradient(var(--conic-position), var(--tw-gradient-stops))',
                 'join-us': "url('/joinus.png')",
                 'footer-texture': "url('/img/footer-texture.png')",
+                'party1': "url('../public/party1.png')",
+                'party2': "url('../public/party2.png')",
+                'party3': "url('../public/party3.png')",
             },
             fontFamily: {
                 "Poppins": ["Poppins", ...defaultTheme.fontFamily.sans],

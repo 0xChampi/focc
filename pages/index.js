@@ -8,7 +8,6 @@ import { Application } from '@splinetool/runtime';
 import Spline from '@splinetool/react-spline';
 import Typical from 'react-typical';
 
-
 export default function Home() {
 
 //    const [customCursorEnabled, setCustomCursorEnabled] = useState(false)
@@ -57,10 +56,10 @@ export default function Home() {
                       <div className="text-xs mx-4 flex-row ">
                           <div className="-space-y-2 lg:-space-y-8"> <div className="font-extrabold justify-center  text-2xl md:text-xl lg:text-6xl">Experiential</div>
                           <div className="font-extrabold justify-center -py-4  text-2xl md:text-2xl lg:text-6xl">Networking</div>
-                          <div className="font-extrabold justify-center -py-4  text-2xl md:text-2xl lg:text-6xl">Platform</div>
+                              <div className="font-extrabold text-transparent text-2xl md:text-2xl lg:text-6xl bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">Platform</div>
                              </div>
                           <div className="my-6 sm:text-sm md:text-l">Join the club for exclusive access to unique networking experiences & snackable content produced live from our mobile Creator Studio alongside the most influential digital advertising events across the globe.</div>
-                          <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-Poppins text-zinc-900 rounded-2xl group bg-gradient-to-br from-orange-700 to-yellow-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                          <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-Poppins text-zinc-900 rounded-2xl group bg-gradient-to-br from-red-700 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
                               <span class="px-16 md:px-18 md:py-1 font-Poppins transition-all ease-in duration-75 bg-white dark:bg-zinc-900 rounded-2xl group-hover:bg-opacity-0">
                                   Join the Club
                               </span>
@@ -69,7 +68,7 @@ export default function Home() {
                       <div className="object-contain flex flexbox flex-col -space-y-2 justify-center"><Image class="" src="/palmnotch.png" width="1200" height="1000"></Image></div>
                   </div>
 
-                  <div className="container w-400px bg-white-100">
+                  <div className="container w-400px bg-white-100 pt-14">
                       <div className="h-[200px] m-auto overflow-hidden relative w-auto">
                           <ul className="flex w-[calc(250px*14)] animate-scroll">
                               <li className="mx-5 w-[250px]"><Image class="" src="/adjust.png" width="1200" height="1000"></Image></li>
@@ -90,115 +89,84 @@ export default function Home() {
                           </ul>
                       </div>
                   </div>
-                  <div className="flex flexbox justify-center">
+                  <div className="flex flexbox justify-center pt-32">
                       <Spline scene="https://prod.spline.design/rSKhg0F1DceQLp5L/scene.splinecode" />
                   </div>
-                  <div className="container flex justify-center font-Poppins text-transparent text-xl md:text-2xl lg:text-3xl bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600" href="#URL">
+                  <div className="container pt-14 flex justify-center font-Poppins text-transparent text-xl md:text-2xl lg:text-3xl bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600" href="#URL">
                           <div class="">WORK DESERVES TO BE</div>
                       </div>
                       <div className="inline-block container flex justify-center font-Poppins font-semibold text-transparent text-4xl md:text-4xl lg:text-6xl bg-clip-text bg-white" href="#URL">
-                          <div>HAPPY</div>
-                      </div>
-
-                  <strong className="text-4xl container flex -py-4 my-12 font-semibold font-Poppins flexbox px-16 text-2xl md:text-4xl lg:text-5xl ">
-                                      <p>From {''}
-                                          <Typical
-                                              wrapper="b"
-                                              loop={Infinity}
-                                          steps={[
-                                          'URL',
-                                          2000,
-                                          'to',
-                                          2000,
-                                          'IRL',
-                                          2000,
+                          <strong className="container flex -py-4 my-12 font-semibold font-Poppins flexbox justify-center px-16 text-6xl md:text-4xl lg:text-5xl ">
+                              <p>{''}
+                                  <Typical
+                                      className="text-6xl"
+                                      wrapper="b"
+                                      loop={Infinity}
+                                      steps={[
+                                      'HAPPY',
+                                      2000,
+                                      'FUN',
+                                      2000,
+                                      'AUTHENTIC',
+                                      2000,
                                       ]}
                                   />
-                                      </p>
-                              </strong>
+                              </p>
+                          </strong>
+                      </div>
 
 
 
-                  <div className="container flex flexbox justify-center font-Poppins flexbox ">
+
+
+                  <div className="container flex flexbox justify-center font-Poppins flexbox pt-32 ">
                       <div class="px-2">
                           <div class="flex -mx-2 fade-in opacity-0 transition opacity ease-out duration-500">
-                              <div class="w-1/3 px-4">
-                                  <img src="party1.png" height="400" width="400"/>
-
+                              <div class="w-1/3 mx-6 px-4 bg-party1 h-[32rem] w-[22.8rem]">
+<div className="justify"></div>
                               </div>
-                              <div class="w-1/3 px-4">
-                                  <img src="party2.png" alt="" height="400" width="400"/>
+                              <div class="w-1/3 mx-6 px-4 bg-party2 h-[32rem] w-[22.8rem]">
                               </div>
-                              <div class="w-1/3 px-4">
-                                  <img src="party3.png" alt="" height="400" width="400"/>
-
+                              <div class="w-1/3 mx-6 px-4 bg-party3 h-[32rem] w-[22.8rem]">
                           </div>
                       </div>
                   </div>
                   </div>
 
-                  <div className="container flex -py-4 my-12 justify-center font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl">
+                  <div className="container flex -py-4 my-12 pt-32 justify-center font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl">
                   </div>
                   <div class="container flex flex-row justify-center px-6 md:object-scale-down rounded-lg shadow-xl fade-in opacity-0 transition opacity ease-out duration-300">
                       <img src="joinus.png" height="200" width="1300" alt="" class="rounded-t-lg"/>
                   </div>
-                  <div className="container flex font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500"><div class="">UNIQUE EXPERIENCES</div></div>
-                  <div className="container flex flexbox justify-center font-Poppins flexbox fade-in opacity-0 transition opacity ease-out duration-500">
-                      <div class="px-2">
-                      <div class="flex -mx-2">
-                        <div class="px-2">
-                            <div class="bg-zinc-800 rounded-2xl px-4 py-4 text-2xl h-36 w-24 md:h-80 md:w-56 lg:text-4xl flex flexbox flex-col justify-center">300+
-                                <div className="text-xxs md:text-base lg:text-xl">we pride ourselves in having hosted lots of parties in the norcal and socal areas</div>
-                            </div>
 
-                        </div>
-                        <div class="px-2">
-                            <div class="bg-zinc-800 rounded-2xl px-4 py-4  text-2xl h-36 w-24 md:h-80 md:w-56 flex flexbox justify-center align-baseline">500k</div>
-                        </div>
-                          <div>
-                        <div class="px-2">
-                            <div class="bg-zinc-800 rounded-2xl px-4 py-4  text-2xl h-36 w-24 md:h-80 md:w-56 flex flexbox flex-row justify-center">
-                                10,000
-                            </div>
-                        </div>
-                          </div>
-                          <div class="px-2">
-                              <div class="bg-zinc-800 rounded-2xl px-4 py-4  text-2xl h-36 w-24 md:h-80 md:w-56 flex flexbox flex-row justify-center">
-                                  10,000
-                              </div>
-                          </div>
 
+                  <div className="flex flexbox flex-row justify-center container space-between pt-12">
+                      <div className="px-5 py-5 justify-center w-1/3">
+                          <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">73M+</div>
+                          <div className="mx-10 my-2 flex justify-center">Developers</div>
                       </div>
-                    </div>
-                  </div>
-                  <div id="cs" className="container flex font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500 fade-in opacity-0 transition opacity ease-out duration-500"><div class="">CREATOR LAB</div></div>
-                  <div className="container flex justify-center">
-                          <div className="my-4 mx-6 text-sm md:text-xl">Join the club for exclusive access to unique networking experiences & snackable content produced live from our mobile Creator Studio alongside the most influential digital advertising events across the globe.</div>
-                  </div>
-                  <div class="fade-in opacity-0 transition opacity ease-out duration-500 py-12 container flex flex-row justify-center px-6 py-6 md:object-scale-down rounded-lg shadow-xl bg-transparent">
-                      <Image class="fade-in-image" src="/cs.png" width="1300" height="600"></Image>
-                  </div>
-                  <div className="container flex justify-center"><div id="/cs" className="mx-5 container flex font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl"><div class="">PARTNER WITH US</div></div></div>
-                  <div className="container flex justify-center">
-                          <div className="my-6 mx-14 text-sm md:text-2xl">Join the club for exclusive access to unique networking experiences & snackable content produced live from our mobile Creator Studio alongside the most influential digital advertising events across the globe.</div>
-                  </div>
-                  <div className="py-6 container flex flexbox justify-center font-Poppins flexbox fade-in opacity-0 transition opacity ease-out duration-500">
-                      <div class="px-2">
-                          <div class="flex -mx-2">
-                              <div class="w-1/3 px-4">
-                                  <img src="partner1.png" height="400" width="400"/>
+                      <div className="px-5 py-5">
+                          <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">100M+</div>
+                          <div className="mx-10 my-2 flex justify-center">Public Repositories</div>
+                      </div>
 
-                              </div>
-                              <div class="w-1/3 px-4">
-                                  <img src="partner2.png" alt="" height="400" width="400"/>
-                              </div>
-                              <div class="w-1/3 px-4">
-                                  <img src="party3.png" alt="" height="400" width="400"/>
-
-                              </div>
-                          </div>
+                  </div>
+                  <div className="flex flexbox flex-row justify-center container space-between pb-24">
+                      <div className="px-2 py-5 justify-center w-1/3">
+                          <div className="mx-12 my-3 font-poppins font-bold text-4xl flex justify-center">1B+</div>
+                          <div className="mx-10 my-2 flex justify-center">Contributors</div>
+                      </div>
+                      <div className="px-4 py-5">
+                          <div className="mx-10 my-3 font-poppins font-bold text-4xl flex justify-center">90+</div>
+                          <div className="mx-10 my-2 flex justify-center">Top Forbes Companies</div>
                       </div>
                   </div>
+
+
+                  <div id="cs" className="container flex font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500 fade-in opacity-0 transition opacity ease-out duration-500 justify-center"><div class="">AMPLIFY & INTEGRATE</div></div>
+
+
+
 
                   <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-3xl lg:text-5xl"><div class="">ITS FIVE O'CLOCK SOMEWHERE</div></div>
                   <div className="flex flexbox justify-center fade-in opacity-0 transition opacity ease-out duration-500">
@@ -209,29 +177,6 @@ export default function Home() {
                   </div>
 
 
-                  <div className="py-12 container flex flexbox justify-center font-Poppins flexbox fade-in opacity-0 transition opacity ease-out duration-500">
-                      <div class="px-2">
-                          <div class="flex -mx-2">
-                              <div class="px-2">
-                                  <div class="bg-zinc-800 rounded-2xl px-4 py-4 text-2xl h-36 w-24 md:h-80 md:w-56 lg:text-4xl flex flexbox flex-col justify-center">300+
-                                      <div className="text-xxs md:text-base lg:text-xl">we pride ourselves in having hosted lots of parties in the norcal and socal areas</div>
-                                  </div>
-
-                              </div>
-                              <div class="px-2">
-                                  <div class="bg-zinc-800 rounded-2xl px-4 py-4  text-2xl h-36 w-24 md:h-80 md:w-56 flex flexbox justify-center align-baseline">500k</div>
-                              </div>
-                              <div>
-                                  <div class="px-2">
-                                      <div class="bg-zinc-800 rounded-2xl px-4 py-4  text-2xl h-36 w-24 md:h-80 md:w-56 flex flexbox flex-row justify-center">
-                                          10,000
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
 
 
 
