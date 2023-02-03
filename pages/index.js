@@ -65,7 +65,7 @@ export default function Home() {
                               </span>
                           </button>
                       </div>
-                      <div className="object-contain flex flexbox flex-col -space-y-2 justify-center"><Image class="" src="/palmnotch.png" width="1200" height="1000"></Image></div>
+                      <div className="object-contain flex flexbox flex-col -space-y-2 justify-center"><Image class="" src="/landing.png" width="1200" height="1000"></Image></div>
                   </div>
 
                   <div className="container w-400px bg-white-100 pt-14">
