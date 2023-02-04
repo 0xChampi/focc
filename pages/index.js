@@ -89,14 +89,14 @@ export default function Home() {
                           </ul>
                       </div>
                   </div>
-                  <div className="flex flexbox justify-center pt-32">
+                  <div className="flex flexbox justify-center pt-32 fade-in opacity-0 transition opacity ease-out duration-500">
                       <Spline scene="https://prod.spline.design/rSKhg0F1DceQLp5L/scene.splinecode" />
                   </div>
                   <div className="container pt-14 flex justify-center font-Poppins text-transparent text-xl md:text-2xl lg:text-3xl bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600" href="#URL">
-                          <div class="">WORK DESERVES TO BE</div>
+                      <div class="fade-in opacity-0 transition opacity ease-out duration-500">WORK DESERVES TO BE</div>
                       </div>
                       <div className="inline-block container flex justify-center font-Poppins font-semibold text-transparent text-4xl md:text-4xl lg:text-6xl bg-clip-text bg-white" href="#URL">
-                          <strong className="container flex -py-4 my-12 font-semibold font-Poppins flexbox justify-center px-16 text-6xl md:text-4xl lg:text-5xl ">
+                          <strong className="container flex -py-4 my-12 font-semibold font-Poppins flexbox justify-center px-16 text-6xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500">
                               <p>{''}
                                   <Typical
                                       className="text-6xl"
@@ -137,8 +137,8 @@ export default function Home() {
                   </div>
 
 
-                  <div className="container bg-workspaces bg-cover h-[36rem] w-[36rem]">
-                  <div className="flex flexbox flex-row justify-center mx-12 container space-between pb-12">
+                  <div className="container bg-workspaces bg-cover h-[36rem] w-[36rem] fade-in opacity-0 transition opacity ease-out duration-500 ">
+                  <div className="flex flexbox flex-row justify-center mx-12 container space-between pb-12 ">
                       <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
                           <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-start">73M+</div>
                           <div className="mx-10 my-2 flex justify-start">Developers</div>
@@ -156,7 +156,7 @@ export default function Home() {
                           <div className="mx-10 my-2 flex justify-center">Public Repositories</div>
                       </div>
 </div>
-                      
+
                   </div>
 
                   <div class="container flex flex-row pt-12 justify-center px-6 md:object-scale-down rounded-lg shadow-xl fade-in opacity-0 transition opacity ease-out duration-300">
