@@ -15,6 +15,7 @@
         "@unreal/pan": "^0.0.22",
         "eslint": "8.31.0",
         "eslint-config-next": "13.1.2",
+        "firebase": "^9.17.1",
         "framer-motion": "^7.10.3",
         "locomotive-scroll": "^4.1.4",
         "next": "13.1.2",

@@ -8,6 +8,23 @@ import { Application } from '@splinetool/runtime';
 import Spline from '@splinetool/react-spline';
 import Typical from 'react-typical';
 import { motion } from "framer-motion";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyB9uK105PkbNm-TmtwRf2Jt2Vv4AJl06U8",
+    authDomain: "five-o-clock-club.firebaseapp.com",
+    projectId: "five-o-clock-club",
+    storageBucket: "five-o-clock-club.appspot.com",
+    messagingSenderId: "519034305474",
+    appId: "1:519034305474:web:8564f215e5f464fc2f745b",
+    measurementId: "G-FFCEGG61Q7"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 export default function Home() {
 
