@@ -7,6 +7,7 @@ import { Detector, Scroller } from '@unreal/pan'
 import { Application } from '@splinetool/runtime';
 import Spline from '@splinetool/react-spline';
 import Typical from 'react-typical';
+import { motion } from "framer-motion";
 
 export default function Home() {
 
