@@ -24,9 +24,11 @@ export default function Home() {
         }
     })
 
+
+
   return (
 <>
-                  <nav class="border-zinc-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black-900">
+                  <nav class="border-zinc-200 px-2 sm:px-4 py-2.5 rounded bg-black">
                   <div class="container flex items-center justify-between mx-2 md:mx-auto">
                       <Link to="/cs" class="flex justify-center mx-12">
                           <div className="flex flexbox px-16 py-8 lg:mx-auto">
@@ -51,8 +53,7 @@ export default function Home() {
                       </div>
                   </div>
               </nav>
-
-              <main>
+              <main className="bg-black">
                   <div className="container bg-ocircles bg-cover mx-auto px-24 py-10 flex flexbox justify-center m-6 font-Poppins text-white text-s md:text-4xl lg:text-4xl h-[50rem]">
                       <div className="text-xs mx-4 flex-row ">
                           <div className="-space-y-2 lg:-space-y-8"> <div className="mx-6 font-extrabold justify-center  text-2xl md:text-xl lg:text-6xl transform transition duration-500 hover:scale-110">Experiential</div>
@@ -66,7 +67,7 @@ export default function Home() {
                               </span>
                           </button>
                       </div>
-                      <div className="object-contain flex flexbox flex-col -space-y-2 justify-center"><Image class="" src="/landing.png" width="1200" height="1000"></Image></div>
+                      <div className="object-contain flex flexbox flex-col -space-y-2 justify-center hover:scale-110"><Image class="" src="/landing.png" width="1200" height="1000"></Image></div>
                   </div>
 
                   <div className="container w-400px bg-white-100 pt-14">
@@ -89,7 +90,7 @@ export default function Home() {
                       </div>
                   </div>
 
-                 <div className="container grid place-items-center bg-circles bg-cover h-[60rem]">
+                  <div className="container grid place-items-center bg-circles bg-cover h-[60rem] transition opacity ease-out duration-500">
                   <div className="container pt-14 flex justify-center font-Poppins text-transparent text-xl md:text-2xl lg:text-3xl bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600" href="#URL">
                       <div class="grid place-items-center fade-in opacity-0 transition opacity ease-out duration-500">Work deserves to be</div>
                       </div>
@@ -135,9 +136,9 @@ export default function Home() {
                       </div>
                   </div>
                   </div>
-
-                  <div class="relative flex min-h-screen pt-20 flex-col items-center justify-center overflow-hidden bg-black z-0">
-                  <div class="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0">
+                  <div className="transform transition duration-500">
+                  <div class="relative flex min-h-screen pt-20 flex-col items-center justify-center overflow-hidden bg-black z-0 transform transition duration-500">
+                  <div class="relative flex w-full scale-y-135 items-center justify-center">
                       <div class="absolute inset-auto right-1/2 h-56 w-[30rem] bg-gradient-conic from-orange-500 via-black to-transparent text-white [--conic-position:from_70deg_at_center_top]"></div>
                       <div class="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-black to-orange-500 text-white [--conic-position:from_290deg_at_center_top]"></div>
                       <div class="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-black blur-2xl"></div>
@@ -150,7 +151,7 @@ export default function Home() {
                   </div>
 
                   <div class="relative z-50 flex flex-col items-center px-5">
-
+</div>
 
                       <div className="container flex -py-4 my-12 pt-34 justify-center font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl">
                       </div>
@@ -162,7 +163,7 @@ export default function Home() {
                                   <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">3</div>
                                   <div className="mx-10 my-2 flex justify-center">Cities</div>
                               </div>
-                              <div className="px-5 py-5 transform transition duration-500 hover:scale-110 pt-22">
+                              <div className="px-5 py-5 transform transition duration-500 hover:scale-110">
                                   <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">40+</div>
                                   <div className="mx-10 my-2 flex justify-center">Happy Hours</div>
                               </div>
@@ -201,25 +202,25 @@ export default function Home() {
                   </div>
 
 
-                  <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-3xl lg:text-5xl"><div class="">ITS FIVE O'CLOCK SOMEWHERE</div></div>
-                  <div className="flex flexbox justify-center fade-in opacity-0 transition opacity ease-out duration-500">
+                  <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-3xl lg:text-5xl transition opacity ease-out duration-500"><div class="">ITS FIVE O'CLOCK SOMEWHERE</div></div>
+                  <div className="flex flexbox justify-center transition opacity ease-out duration-500">
                       <Image src="/oclock.png" height="80" width="80" className="mx-9"></Image>
                       <Image src="/wclock.png" height="80" width="140"></Image>
                       <Image src="/wclock.png" height="80" width="140"></Image>
                       <Image src="/wclock.png" height="80" width="140"></Image>
                   </div>
-                  <div className="container flex flexbox justify-center space-between">
-                      <div className="">San Francisco</div>
-                      <div className="mx-5">New York</div>
-                      <div className="mx-5">Los Angeles</div>
-                      <div className="mx-5">Paris</div>
+                  <div className="container flex flexbox justify-center space-between mx-16 py-6 transition opacity ease-out duration-500">
+                      <div className="mx-8">San Francisco</div>
+                      <div className="mx-8">New York</div>
+                      <div className="mx-8 ">Los Angeles</div>
+                      <div className="mx-12">Paris</div>
                   </div>
 
                   <div id="cs" className="container flex pb-12 font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500 fade-in opacity-0 transition opacity ease-out duration-500 justify-center"><div class="">AMPLIFY & INTEGRATE</div></div>
 
                   <div className="container justify-center flex pt-24 pb-24">
 
-                      <a href="#" class="container flex flexbox justify-center mx-6 items-center bg-black border border-white rounded-3xl shadow md:flex-row md:max-w-xl hover:bg-black dark:border-gray-700 transform transition duration-500 hover:scale-110">
+                      <a href="#" class="container flex flexbox justify-center mx-6 items-center bg-black border border-white rounded-3xl shadow md:flex-row md:max-w-xl hover:bg-black dark:border-gray-700 transition opacity ease-out duration-500 hover:scale-110">
                       <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/party2.png" ></img>
                       <div class="flex flex-col justify-center p-4 leading-normal">
                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Premier</h5>
@@ -237,11 +238,11 @@ export default function Home() {
               </main>
 
 
-<footer class="container bg-blue dark:bg-zinc-900 fade-in opacity-0 transition opacity ease-out duration-500">
+<footer class="container bg-black fade-in opacity-0 transition opacity ease-out duration-500">
 
 
-                  <div class="px-4 py-6 bg-zinc-100 dark:bg-zinc-700 md:flex md:items-center md:justify-between">
-                      <span class="text-sm text-zinc-500 dark:text-zinc-300 sm:text-center">© 2023 <a href="https://flowbite.com/">Five O'Clock Club 2023™</a>. All Rights Reserved. - Designed & Built by 0xChampi of attn.studios & attn.labs
+                  <div class="px-4 py-6 bg-black md:flex md:items-center md:justify-between">
+                      <span class="text-sm text-zinc-500 dark:text-zinc-300 sm:text-center">© 2023 <a href="https://flowbite.com/">Five O'Clock Club 2023™</a>. All Rights Reserved. - Designed & Built by Max Gold & 0xChampi of attn.studios & attn.labs
                       </span>
                       <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
                           <a href="#" class="text-zinc-400 hover:text-zinc-900 dark:hover:text-white">
