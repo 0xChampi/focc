@@ -72,7 +72,8 @@ module.exports = {
                 'party3': "url('../public/party3.png')",
                 'workspaces' : "url('../public/workspaces.png')",
                 'circles' : "url('../public/circles.png')",
-                'ocircles' : "url('../public/ocircles.png')",            },
+                'ocircles' : "url('../public/ocircles.png')",
+            },
             fontFamily: {
                 "Poppins": ["Poppins", ...defaultTheme.fontFamily.sans],
             },

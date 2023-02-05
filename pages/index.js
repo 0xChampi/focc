@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
 <>
-                  <nav class="bg-rgb(20, 20, 20) border-zinc-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black-900">
+                  <nav class="border-zinc-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black-900">
                   <div class="container flex items-center justify-between mx-2 md:mx-auto">
                       <Link to="/cs" class="flex justify-center mx-12">
                           <div className="flex flexbox px-16 py-8 lg:mx-auto">
@@ -136,51 +136,70 @@ export default function Home() {
                   </div>
                   </div>
 
-                  <div className="container flex -py-4 my-12 pt-32 justify-center font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl">
+                  <div class="relative flex min-h-screen pt-20 flex-col items-center justify-center overflow-hidden bg-black z-0">
+                  <div class="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0">
+                      <div class="absolute inset-auto right-1/2 h-56 w-[30rem] bg-gradient-conic from-orange-500 via-black to-transparent text-white [--conic-position:from_70deg_at_center_top]"></div>
+                      <div class="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-black to-orange-500 text-white [--conic-position:from_290deg_at_center_top]"></div>
+                      <div class="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-black blur-2xl"></div>
+                      <div class="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-10 backdrop-blur-md"></div>
+                      <div class="absolute inset-auto z-50 h-36 w-[28rem] -translate-y-1/2 rounded-full bg-orange-500 opacity-50 blur-3xl"></div>
+                      <div class="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-orange-400 blur-2xl"></div>
+                      <div class="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-orange-400 blur-sm"></div>
+
+                      <div class="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-black"></div>
                   </div>
 
+                  <div class="relative z-50 flex flex-col items-center px-5">
 
-                  <div className="container bg-cover h-[36rem] w-[36rem] fade-in opacity-0 transition opacity ease-out duration-500">
-                  <div className="flex flexbox flex-row justify-center container space-between pb-12 ">
-                      <div className=" py-5 justify-center w-1/2 transform transition duration-500 ">
-                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">3</div>
-                          <div className="mx-10 my-2 flex justify-center">Cities</div>
+
+                      <div className="container flex -py-4 my-12 pt-34 justify-center font-semibold font-Poppins flexbox px-6 text-2xl md:text-4xl lg:text-5xl">
                       </div>
-                      <div className="px-5 py-5 transform transition duration-500 hover:scale-110 pt-22">
-                          <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">40+</div>
-                          <div className="mx-10 my-2 flex justify-center">Happy Hours</div>
-                      </div>
-                      <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
-                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">10K+</div>
-                          <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
-                      </div>
-                      <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
-                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">10K+</div>
-                          <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
-                      </div>
-</div>
-                      <div className="container bg-cover h-[36rem] w-[36rem] fade-in opacity-0 transition opacity ease-out duration-500">
+
+
+                      <div className="container bg-cover h-[30rem] w-[36rem] fade-in opacity-0 transition opacity ease-out duration-500">
                           <div className="flex flexbox flex-row justify-center container space-between pb-12 ">
                               <div className=" py-5 justify-center w-1/2 transform transition duration-500 ">
-                                  <div className="mx-4 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">3</div>
+                                  <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">3</div>
                                   <div className="mx-10 my-2 flex justify-center">Cities</div>
                               </div>
                               <div className="px-5 py-5 transform transition duration-500 hover:scale-110 pt-22">
-                                  <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">40+</div>
+                                  <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">40+</div>
                                   <div className="mx-10 my-2 flex justify-center">Happy Hours</div>
                               </div>
                               <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
-                                  <div className="mx-4 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">10K+</div>
+                                  <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">10K+</div>
                                   <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
                               </div>
                               <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
-                                  <div className="mx-4 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">10K+</div>
+                                  <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">10K+</div>
                                   <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
                               </div>
                           </div>
+                          <div className="container bg-cover h-[36rem] w-[36rem] fade-in opacity-0 transition opacity ease-out duration-500">
+                              <div className="flex flexbox flex-row justify-center container space-between pb-12 ">
+                                  <div className=" py-5 justify-center w-1/2 transform transition duration-500 ">
+                                      <div className="mx-4 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">3</div>
+                                      <div className="mx-10 my-2 flex justify-center">Cities</div>
+                                  </div>
+                                  <div className="px-5 py-5 transform transition duration-500 hover:scale-110 pt-22">
+                                      <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">40+</div>
+                                      <div className="mx-10 my-2 flex justify-center">Happy Hours</div>
+                                  </div>
+                                  <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
+                                      <div className="mx-4 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">10K+</div>
+                                      <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
+                                  </div>
+                                  <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
+                                      <div className="mx-4 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">10K+</div>
+                                      <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
+                                  </div>
+                              </div>
                           </div>
 
+                      </div>
                   </div>
+                  </div>
+
 
                   <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-3xl lg:text-5xl"><div class="">ITS FIVE O'CLOCK SOMEWHERE</div></div>
                   <div className="flex flexbox justify-center fade-in opacity-0 transition opacity ease-out duration-500">
