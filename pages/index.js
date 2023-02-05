@@ -52,14 +52,14 @@ export default function Home() {
               </nav>
 
               <main>
-                  <div className="container mx-auto px-24 py-10 flex flexbox justify-center m-6 font-Poppins text-white text-s md:text-4xl lg:text-4xl ">
+                  <div className="container bg-ocircles bg-cover mx-auto px-24 py-10 flex flexbox justify-center m-6 font-Poppins text-white text-s md:text-4xl lg:text-4xl h-[50rem]">
                       <div className="text-xs mx-4 flex-row ">
-                          <div className="-space-y-2 lg:-space-y-8"> <div className="font-extrabold justify-center  text-2xl md:text-xl lg:text-6xl transform transition duration-500 hover:scale-110">Experiential</div>
-                              <div className="font-extrabold justify-center -py-4  text-2xl md:text-2xl lg:text-6xl transform transition duration-500 hover:scale-110">Networking</div>
-                              <div className="font-extrabold text-transparent text-2xl md:text-2xl lg:text-6xl bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600 transform transition duration-500 hover:scale-110">Platform</div>
+                          <div className="-space-y-2 lg:-space-y-8"> <div className="mx-6 font-extrabold justify-center  text-2xl md:text-xl lg:text-6xl transform transition duration-500 hover:scale-110">Experiential</div>
+                              <div className="mx-6 font-extrabold justify-center -py-4  text-2xl md:text-2xl lg:text-6xl transform transition duration-500 hover:scale-110">Networking</div>
+                              <div className="mx-6 font-extrabold text-transparent text-2xl md:text-2xl lg:text-6xl bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600 transform transition duration-500 hover:scale-110">Platform</div>
                              </div>
-                          <div className="my-6 sm:text-sm md:text-l">Join the club for exclusive access to unique networking experiences & snackable content produced live from our mobile Creator Studio alongside the most influential digital advertising events across the globe.</div>
-                          <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-Poppins text-zinc-900 rounded-2xl group bg-gradient-to-br from-red-700 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                          <div className="mx-6 my-6 sm:text-sm md:text-xl">Join the club for exclusive access to unique networking experiences & snackable content produced live from our mobile Creator Studio alongside the most influential digital advertising events across the globe.</div>
+                          <button class="mx-6 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-Poppins text-zinc-900 rounded-2xl group bg-gradient-to-br from-red-700 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
                               <span class="px-16 md:px-18 md:py-1 font-Poppins transition-all ease-in duration-75 bg-white dark:bg-zinc-900 rounded-2xl group-hover:bg-opacity-0">
                                   Join the Club
                               </span>
@@ -70,33 +70,30 @@ export default function Home() {
 
                   <div className="container w-400px bg-white-100 pt-14">
                       <div className="h-[200px] m-auto overflow-hidden relative w-auto">
-                          <ul className="flex w-[calc(250px*14)] animate-scroll">
-                              <li className="mx-5 w-[250px]"><Image class="" src="/adjust.png" width="1200" height="1000"></Image></li>
-                              <li className="mx-5 w-[250px]"><Image class="" src="/apptweak.png" width="1200" height="1000"></Image></li>
+                          <ul className="flex justify-center w-[calc(250px*14)] animate-scroll">
+                              <li className="mx-5 w-[150px]"><Image class="" src="/adjust.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/apptweak.png" width="1200" height="800"></Image></li>
                               <li className="mx-5 w-[250px]"><Image class="" src="/blindferret.png" width="1200" height="1000"></Image></li>
                               <li className="mx-5 w-[250px]"><Image class="" src="/craftsman.png" width="1200" height="1000"></Image></li>
                               <li className="mx-5 w-[250px]"><Image class="" src="/fluent.png" width="1200" height="1000"></Image></li>
-                              <li className="mx-5 w-[250px]"><Image class="" src="/gopro.png" width="1200" height="1000"></Image></li>
-                              <li className="mx-5 w-[250px]"><Image class="" src="/jamcity.png" width="1200" height="1000"></Image></li>
-                              <li className="mx-5 w-[250px]"><Image class="" src="/metricworks.png" width="1200" height="1000"></Image></li>
                               <li className="mx-5 w-[250px]"><Image class="" src="/mintegral.png" width="1200" height="1000"></Image></li>
-                              <li className="mx-5 w-[250px]"><Image class="" src="/mobileaction.png" width="1200" height="1000"></Image></li>
-                              <li className="mx-5 w-[250px]"><Image class="" src="/moloco.png" width="1200" height="1000"></Image></li>
                               <li className="mx-5 w-[250px]"><Image class="" src="/singular.png" width="1200" height="1000"></Image></li>
-                              <li className="mx-5 w-[250px]"><Image class="" src="/tipalti.png" width="1200" height="1000"></Image></li>
                               <li className="mx-5 w-[250px]"><Image class="" src="/tmobile.png" width="1200" height="1000"></Image></li>
                               <li className="mx-5 w-[250px]"><Image class="" src="/vungle.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/moloco.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/gopro.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/tipalti.png" width="1200" height="1000"></Image></li>
+                              <li className="mx-5 w-[250px]"><Image class="" src="/jamcity.png" width="1200" height="1000"></Image></li>
                           </ul>
                       </div>
                   </div>
-                  <div className="flex flexbox justify-center pt-32 fade-in opacity-0 transition opacity ease-out duration-500">
-                      <Spline scene="https://prod.spline.design/rSKhg0F1DceQLp5L/scene.splinecode" />
-                  </div>
+
+                 <div className="container grid place-items-center bg-circles bg-cover h-[60rem]">
                   <div className="container pt-14 flex justify-center font-Poppins text-transparent text-xl md:text-2xl lg:text-3xl bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-600" href="#URL">
-                      <div class="fade-in opacity-0 transition opacity ease-out duration-500">WORK DESERVES TO BE</div>
+                      <div class="grid place-items-center fade-in opacity-0 transition opacity ease-out duration-500">Work deserves to be</div>
                       </div>
                       <div className="inline-block container flex justify-center font-Poppins font-semibold text-transparent text-4xl md:text-4xl lg:text-6xl bg-clip-text bg-white" href="#URL">
-                          <strong className="container flex -py-4 my-12 font-semibold font-Poppins flexbox justify-center px-16 text-6xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500">
+ <strong className="container flex -py-4  font-semibold font-Poppins flexbox justify-center px-16 text-6xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500">
                               <p>{''}
                                   <Typical
                                       className="text-6xl"
@@ -114,20 +111,25 @@ export default function Home() {
                               </p>
                           </strong>
                       </div>
+                 </div>
 
 
 
 
-
-                  <div className="container flex flexbox justify-center font-Poppins flexbox pt-32 ">
+                  <div className="container flex flexbox justify-center font-Poppins flexbox pt-32 bg-orangedrop ">
                       <div class="px-2">
                           <div class="flex -mx-2 fade-in opacity-0 transition opacity ease-out duration-500">
-                              <div class="w-1/3 mx-6 px-4 bg-party1 h-[34.7rem] w-[22.8rem] transform transition duration-500 hover:scale-110">
-<div className="justify"></div>
+                              <div class="w-1/3 mx-6 px-4 bg-party1 h-[34.7rem] w-[22.8rem] transform transition duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                                  <div className="grid place-items-center h-[500px] font-semibold font-poppins text-4xl [backface-visibility:hidden]"></div>
+                                  <div className="grid place-items-center h-[500px] font-semibold font-poppins text-4xl ">
+                      </div>
+
                               </div>
-                              <div class="w-1/3 mx-6 px-4 bg-party2 h-[34.7rem] w-[22.8rem] transform transition duration-500 hover:scale-110">
+                              <div class="w-1/3 mx-6 px-4 bg-party2 h-[34.7rem] w-[22.8rem] transform transition duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                                  <div className="grid place-items-center h-[500px] font-semibold font-poppins text-4xl">CREATOR LAB </div>
                               </div>
-                              <div class="w-1/3 mx-6 px-4 bg-party3 h-[34.7rem] w-[22.8rem] transform transition duration-500 hover:scale-110">
+                              <div class="w-1/3 mx-6 px-4 bg-party3 h-[34.7rem] w-[22.8rem] transform transition duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                                  <div className="grid place-items-center h-[500px] font-semibold font-poppins text-4xl">BESPOKE COWORKING LOUNGES</div>
                           </div>
                       </div>
                   </div>
@@ -137,36 +139,47 @@ export default function Home() {
                   </div>
 
 
-                  <div className="container bg-workspaces bg-cover h-[36rem] w-[36rem] fade-in opacity-0 transition opacity ease-out duration-500 ">
-                  <div className="flex flexbox flex-row justify-center mx-12 container space-between pb-12 ">
-                      <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
-                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-start">73M+</div>
-                          <div className="mx-10 my-2 flex justify-start">Developers</div>
+                  <div className="container bg-cover h-[36rem] w-[36rem] fade-in opacity-0 transition opacity ease-out duration-500">
+                  <div className="flex flexbox flex-row justify-center container space-between pb-12 ">
+                      <div className=" py-5 justify-center w-1/2 transform transition duration-500 ">
+                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">3</div>
+                          <div className="mx-10 my-2 flex justify-center">Cities</div>
                       </div>
                       <div className="px-5 py-5 transform transition duration-500 hover:scale-110 pt-22">
-                          <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">100M+</div>
-                          <div className="mx-10 my-2 flex justify-center">Public Repositories</div>
+                          <div className="mx-10 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">40+</div>
+                          <div className="mx-10 my-2 flex justify-center">Happy Hours</div>
                       </div>
                       <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
-                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-start">73M+</div>
-                          <div className="mx-10 my-2 flex justify-start">Developers</div>
+                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">10K+</div>
+                          <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
                       </div>
-                      <div className="px-5 py-5 transform transition duration-500 hover:scale-110 pt-22">
-                          <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">100M+</div>
-                          <div className="mx-10 my-2 flex justify-center">Public Repositories</div>
+                      <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
+                          <div className="mx-4 my-3 font-poppins text-orange-600 font-bold text-4xl flex justify-center">10K+</div>
+                          <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
                       </div>
 </div>
+                      <div className="container bg-cover h-[36rem] w-[36rem] fade-in opacity-0 transition opacity ease-out duration-500">
+                          <div className="flex flexbox flex-row justify-center container space-between pb-12 ">
+                              <div className=" py-5 justify-center w-1/2 transform transition duration-500 ">
+                                  <div className="mx-4 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">3</div>
+                                  <div className="mx-10 my-2 flex justify-center">Cities</div>
+                              </div>
+                              <div className="px-5 py-5 transform transition duration-500 hover:scale-110 pt-22">
+                                  <div className="mx-10 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">40+</div>
+                                  <div className="mx-10 my-2 flex justify-center">Happy Hours</div>
+                              </div>
+                              <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
+                                  <div className="mx-4 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">10K+</div>
+                                  <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
+                              </div>
+                              <div className=" py-5 justify-center w-1/2 transform transition duration-500 hover:scale-110">
+                                  <div className="mx-4 my-3 font-poppins text-orange-400 font-bold text-4xl flex justify-center">10K+</div>
+                                  <div className="mx-10 my-2 flex justify-center">Happy Attendees</div>
+                              </div>
+                          </div>
+                          </div>
 
                   </div>
-
-                  <div class="container flex flex-row pt-12 justify-center px-6 md:object-scale-down rounded-lg shadow-xl fade-in opacity-0 transition opacity ease-out duration-300">
-                      <img src="joinus.png" height="200" width="1300" alt="" class="rounded-t-lg"/>
-                  </div>
-
-                  <div id="cs" className="container flex font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500 fade-in opacity-0 transition opacity ease-out duration-500 justify-center"><div class="">AMPLIFY & INTEGRATE</div></div>
-
-
-
 
                   <div className="container flex justify-center font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-3xl lg:text-5xl"><div class="">ITS FIVE O'CLOCK SOMEWHERE</div></div>
                   <div className="flex flexbox justify-center fade-in opacity-0 transition opacity ease-out duration-500">
@@ -175,6 +188,27 @@ export default function Home() {
                       <Image src="/wclock.png" height="80" width="140"></Image>
                       <Image src="/wclock.png" height="80" width="140"></Image>
                   </div>
+                  <div className="container flex flexbox justify-center space-between">
+                      <div className="">San Francisco</div>
+                      <div className="mx-5">New York</div>
+                      <div className="mx-5">Los Angeles</div>
+                      <div className="mx-5">Paris</div>
+                  </div>
+
+                  <div id="cs" className="container flex pb-12 font-semibold font-Poppins flexbox my-16 px-6 text-2xl md:text-4xl lg:text-5xl fade-in opacity-0 transition opacity ease-out duration-500 fade-in opacity-0 transition opacity ease-out duration-500 justify-center"><div class="">AMPLIFY & INTEGRATE</div></div>
+
+                  <div className="container justify-center flex pt-24 pb-24">
+
+                      <a href="#" class="container flex flexbox justify-center mx-6 items-center bg-black border border-white rounded-3xl shadow md:flex-row md:max-w-xl hover:bg-black dark:border-gray-700 transform transition duration-500 hover:scale-110">
+                      <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/party2.png" ></img>
+                      <div class="flex flex-col justify-center p-4 leading-normal">
+                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Premier</h5>
+                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Our premier package offers services for your community</p>
+                      </div>
+                  </a>
+                  </div>
+
+
 
 
 
@@ -183,50 +217,11 @@ export default function Home() {
               </main>
 
 
-<footer class="bg-blue dark:bg-zinc-900 fade-in opacity-0 transition opacity ease-out duration-500">
-                  <div><div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
-                      <div>
-                          <h2 class="mb-6 text-sm font-semibold text-zinc-500 uppercase dark:text-zinc-400">Company</h2>
-                          <ul class="text-zinc-500 dark:text-zinc-400">
-                              <li class="mb-4">
-                                  <a href="#" class=" hover:underline">About</a>
-                              </li>
-                              <li class="mb-4">
-                                  <a href="#" class="hover:underline">Careers</a>
-                              </li>
-                              <li class="mb-4">
-                                  <a href="#" class="hover:underline">Brand Center</a>
-                              </li>
-                              <li class="mb-4">
-                                  <a href="#" class="hover:underline">Blog</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div>
-                          <h2 class="mb-6 text-sm font-semibold text-zinc-500 uppercase dark:text-zinc-400">Help center</h2>
-                          <ul class="text-zinc-500 dark:text-zinc-400">
-                              <li class="mb-4">
-                                  <a href="#" class="hover:underline">Discord Server</a>
-                              </li>
-                              <li class="mb-4">
-                                  <a href="#" class="hover:underline">Twitter</a>
-                              </li>
-                              <li class="mb-4">
-                                  <a href="#" class="hover:underline">Facebook</a>
-                              </li>
-                              <li class="mb-4">
-                                  <a href="#" class="hover:underline">Contact Us</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div>
-                          <h2 class="mb-6 text-sm font-semibold text-white-500 uppercase text-2xl dark:text-zinc-400">Join the Club</h2>
+<footer class="container bg-blue dark:bg-zinc-900 fade-in opacity-0 transition opacity ease-out duration-500">
 
-                      </div>
 
-                  </div>
                   <div class="px-4 py-6 bg-zinc-100 dark:bg-zinc-700 md:flex md:items-center md:justify-between">
-                      <span class="text-sm text-zinc-500 dark:text-zinc-300 sm:text-center">© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights Reserved.
+                      <span class="text-sm text-zinc-500 dark:text-zinc-300 sm:text-center">© 2023 <a href="https://flowbite.com/">Five O'Clock Club 2023™</a>. All Rights Reserved. - Designed & Built by 0xChampi of attn.studios & attn.labs
                       </span>
                       <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
                           <a href="#" class="text-zinc-400 hover:text-zinc-900 dark:hover:text-white">
@@ -247,7 +242,6 @@ export default function Home() {
                           </a>
 
                       </div>
-                  </div>
                   </div>
                   </footer>
 
